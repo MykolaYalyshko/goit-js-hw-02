@@ -1,8 +1,9 @@
 'use strict';
 function checkForSpam(message) {
-    // Перевірка на заборонені слова
-    const lowerCaseMessage = message.toLowerCase();
-    return lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale");
+  const contentWidth = parseFloat(content);
+  const paddingWidth = parseFloat(padding) * 2
+  const borderWidth = parseFloat(border) * 2; 
+  return contentWidth + paddingWidth + borderWidth;
   }
 
 сonsole.log(checkForSpam("Latest technology news")); // false
