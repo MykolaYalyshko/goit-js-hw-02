@@ -1,7 +1,7 @@
 'use strict';
 function checkForSpam(message) {
   const contentWidth = parseFloat(content);
-  const paddingWidth = parseFloat(padding) * 2
+  const paddingWidth = parseFloat(padding) * 2;
   const borderWidth = parseFloat(border) * 2; 
   return contentWidth + paddingWidth + borderWidth;
 }
