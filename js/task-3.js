@@ -1,9 +1,12 @@
 'use strict';
 function checkForSpam(message) {
-  const contentWidth = parseFloat(content);
-  const paddingWidth = parseFloat(padding) * 2;
-  const borderWidth = parseFloat(border) * 2; 
-  return contentWidth + paddingWidth + borderWidth;
+  const normalMessage = message.toLowerCase();
+
+  if (normalMessage.includes("spam") || normalMessage.includes("sale")) {
+    return true
+  } else {
+    return false
+  }
 }
 
 console.log(checkForSpam("Latest technology news")); // false
